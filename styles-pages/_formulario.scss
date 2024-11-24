@@ -1,0 +1,85 @@
+@use '../root/variaveis';
+
+.formulario {
+    background: variaveis.$background-quem-sou;    
+    h3 {        
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 1.5rem 0;
+        strong {
+            background: linear-gradient(180deg, #005DF9 0%, #A7DAFF 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.container__contato {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+form {
+    display: flex;
+    flex-direction: column;    
+    label {
+        color: variaveis.$cor-texto02;                
+        margin-top: 0.5rem;
+    }
+    input, textarea {
+        color: variaveis.$cor-texto02;
+        border-radius: 0.625rem;
+        background: #161E25;
+        width: 300px;
+        max-width: 330px;
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+        border: none;        
+        outline: none;
+        &:focus {            
+            box-shadow: 0 0 5px #3498db; 
+        }
+    }       
+    textarea {
+        margin-top: 0.8rem;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    button {
+        border: none;
+        width: 35%;         
+        color: variaveis.$cor-texto02;            
+        margin-top: 0.4rem; 
+        padding: 0.3rem;        
+        border-radius: 1.25rem;
+        background: var(--btn, #9949FF);
+    }
+}
+.container__contato-jds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/img/backgrounds/background-form-dev.png');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.2rem;
+    padding: 3rem 1.25rem;    
+    margin: 1.25rem 0;
+    h4 {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    img {
+        width: 70px;
+        margin: 20px 0;
+    }
+    & p:nth-child(3) {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    & p:nth-child(4) {
+        font-size: 1rem;
+    }
+}

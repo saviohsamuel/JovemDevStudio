@@ -1,0 +1,29 @@
+@use '../root/variaveis';
+
+footer {
+    background: variaveis.$cor-rodape;    
+    p {     
+        padding: 1rem 0;   
+        background: variaveis.$cor-rodape-dev;
+        text-align: center;        
+        font-size: 0.75rem;        
+    }
+}
+.redes__sociais {
+    padding: 1.25rem;
+    h3 {
+        font-size: 1.25rem;
+    }
+    li {        
+        padding-top: 0.9rem;
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 0.3rem;
+            img {
+                height: 1.2rem;
+                width: 1.2rem;            
+            }
+        }
+    }
+}

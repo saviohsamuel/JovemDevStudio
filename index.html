@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jovem Dev Studio | Página inicial</title>
+        <link rel="stylesheet" href="/root/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <header>            
+            <!-- <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav>
+                    <ul role="navigation" class="hidden">                        
+                        <li><a href="#">Quem sou?</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Formulário de contato</a></li>
+                        <li><a href="#">Redes sociais</a></li>
+                    </ul>
+                </nav>
+            </div>         -->
+            <h1>Jovem Dev Studio</h1>
+            <a href="#" class="header__btn">Vamos conversar</a>
+            <div class="container__slogan">
+                <figure>
+                    <img src="/img/logo.svg" loading="lazy" alt="Logo Jovem Dev Studio">
+                </figure>
+                <div>
+                    <p>Seu legado online com inovação e estilo!</p>                                                    
+                </div>                                   
+            </div>            
+            <div class="arrow-container">
+                <div></div>
+            </div>            
+        </header>
+        <section class="quem__sou">
+            <div class="subtitulo">
+                <p>01 |</p>
+                <h2>&nbsp;Quem sou?</h2>
+                <hr>
+            </div>
+            <div class="quem__sou-apresentacao">
+                <figure>
+                    <img src="/img/logo.svg" loading="lazy" alt="Icone Logo">
+                </figure>
+                <p>We are a <strong>group of experts</strong> looking to help companies leverage technology to do more than they had ever thought possible.</p>
+            </div>
+            <p>We do this through a number of services to provide comprehensive solutions for your business. Scroll down to read about what we can do for you.</p>
+            <div class="tablet desktop"> <!-- organizaçao tablet e desktop -->
+                <div class="container__quem-foto">
+                    <figure>
+                        <img src="/img/savio.png" loading="lazy" alt="imagem do Sávio, fundador da Jovem Dev Studio">                
+                    </figure>
+                    <div>
+                        <p>Sávio Samuel</p>
+                        <p>CEO, Jovem Dev Studio</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <img src="/img/ok.svg" loading="lazy" alt="Icone visto / OK">
+                        We always focus on technical excellence
+                    </li>
+                    <li>
+                        <img src="/img/ok.svg" loading="lazy" alt="Icone visto / OK">
+                        Wherever youre going, we bring ideas and excitement
+                    </li>
+                    <li>
+                        <img src="/img/ok.svg" loading="lazy" alt="Icone visto / OK">
+                        Were consultants, guides, and partners for brands
+                    </li>                
+                </ul>
+            </div>
+        </section>
+        <section class="servicos">
+            <div class="subtitulo">
+                <p>02 |</p>
+                <h2>&nbsp;O que fazemos?</h2>
+                <hr>                
+            </div>
+            <h3>Our <strong>comprehensive services</strong> will cover all your needs.</h3>
+            <p>We don't just help with your IT needs. We focus on the entire ecosystem surrounding it. Bringing together people, process, and technology, we pride ourselves on delivering solutions that work in reality. Not theory.</p>            
+        </section> 
+        <section class="projetos">
+            <div class="projetos__apresentacao">
+                <p>Veja alguns dos meus <strong>projetos Desenvolvidos</strong></p>
+                <figure>
+                    <img src="img/logo.svg" loading="lazy" alt="Icone Logo">
+                </figure>
+            </div>
+            <p>Instead of focusing just on the problem, we take the holistic approach so we can build a solution that works end to end.</p>
+            <div class="container__projetos">
+                <figure>
+                    <img src="img/savio.png" alt="">
+                </figure>
+                <div class="container__projetos-descricao">
+                    <h4>Projeto 01</h4>            
+                    <p>Every project starts with understanding the challenge and the landscape...</p>
+                    <a href="#">Link do projeto</a>                
+                </div>                
+            </div>            
+            <div class="container__projetos nth2">
+                <figure>
+                    <img src="img/savio.png" alt="">
+                </figure>
+                <div class="container__projetos-descricao texto2">
+                    <h4>Projeto 02</h4>            
+                    <p>Every project starts with understanding the challenge and the landscape...</p>
+                    <a href="#">Link do projeto</a>                
+                </div>                
+            </div>
+            <div class="container__projetos">
+                <figure>
+                    <img src="img/savio.png" alt="">
+                </figure>
+                <div class="container__projetos-descricao">
+                    <h4>Projeto 03</h4>            
+                    <p>Every project starts with understanding the challenge and the landscape...</p>
+                    <a href="#">Link do projeto</a>                
+                </div>                
+            </div>            
+        </section>
+        <section class="formulario">
+            <h3>Formulário de <strong>contato</strong></h3>
+            <div class="container__contato">                
+                <form action="https://api.staticforms.xyz/submit" method="post"> 
+                    <label>Nome e Sobrenome</label>
+                    <input type="text" name="name" placeholder="Ex: Sávio Sousa" required minlength="3" maxlength="50">
+                    <label>WhatsApp</label>
+                    <input type="tel" name="phone" placeholder="Ex: (85) 91234-5678" required maxlength="15" oninput="formatarTelefone(this)">
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="Ex: nome@gmail.com" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Escreva sua mensagem ou dúvidas!" required></textarea>                
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="accessKey" value="3e33983e-ba57-4ac1-8e6b-d29f128a3134">                    
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/root/obrigado.html">
+                </form>
+                <div class="container__contato-jds">
+                    <h4>“We specialise in helping our customers digitise their business”</h4>
+                    <img src="img/logo.svg" alt="Logo jovem Dev Studio">
+                    <p>Sávio Samuel</p>
+                    <p>Desenvolvedor Front-end</p>                
+                </div>           
+            </div>
+        </section>
+        <footer>
+            <div class="redes__sociais" id="redes-sociais">
+                <h3>Contatos</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/s%C3%A1viosamuel/" target="_blank"><img src="img/redes sociais/linkedin.svg" loading="lazy" alt="Icone Linkedin">Linkedin</li></a>
+                    <li><a href="https://www.instagram.com/jovemdevstudio/" target="_blank"><img src="img/redes sociais/instagram.svg" loading="lazy" alt="Icone Instagram">Instagram</li></a>
+                    <li><a href="https://github.com/saviohsamuel" target="_blank"><img src="img/redes sociais/github.svg" loading="lazy" alt="Icone Github">GitHub</li></a>
+                </ul>
+            </div> 
+            <p>&copy; Todos os direitos reservados Jovem Dev Studio</p>   
+        </footer>
+        <button class="scrollTop" onclick="backTop();">
+            <i class="fa-solid fa-arrow-up"></i>            
+        </button> 
+        <div id="whatsapp">            
+            <a href="https://wa.me/+5585912345678" target="_blank" class="wttp">
+                <i class="fa-brands fa-whatsapp fa-lg"></i>
+            </a>
+        </div>       
+        <script src="function.js" defer></script>      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+</html>
