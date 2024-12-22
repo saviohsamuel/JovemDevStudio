@@ -1,0 +1,50 @@
+@use '../root/variaveis';
+
+footer {
+    background: variaveis.$cor-rodape;    
+    p {     
+        padding: 1rem 0;   
+        background: variaveis.$cor-rodape-dev;
+        text-align: center;        
+        font-size: 0.75rem;        
+    }
+}
+.redes__sociais {
+    padding: 1.25rem;
+    h3 {
+        font-size: 1.25rem;
+    }
+    ul {
+        display: inline-block;
+    }
+    li {        
+        padding-top: 0.9rem;                    
+        transition: color 0.3s ease;
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: .5rem;                                             
+        }
+        svg {
+            height: 24px;
+            width: 24px;
+            path {
+                transition: fill 0.3s ease;
+            }
+        }
+        &:hover {
+            a {              
+              background: variaveis.$cor-btn;
+              background-clip: text;
+              color: transparent;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;                            
+            }      
+            svg {
+              path {                
+                fill: variaveis.$cor-btn;;
+              }
+            }            
+        }
+    }
+}

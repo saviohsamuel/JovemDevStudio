@@ -1,0 +1,95 @@
+@use '../root/variaveis';
+
+.projetos {
+    background-image: url('/img/backgrounds/background-projetos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+.projetos__apresentacao {
+    display: flex;    
+    align-items: center;
+    padding: 1rem 0;  
+    column-gap: 1rem;    
+    figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        box-shadow: 0px 0px 4px 0px #FFF inset;
+        filter: drop-shadow(0px 0px 30px #2E9F8B);                
+        height: 3.9rem;
+        width: 3.9rem;         
+        background: #2E9F8B;
+        border-radius: 50%; 
+        img {            
+            padding: 0.5rem;    
+            height: 3.5rem;
+            width: 3.5rem;
+        }        
+    }
+    p {
+        font-size: 1.25rem;
+        text-align: right;
+        font-weight: 700;
+        strong {
+            background: linear-gradient(270deg, #00C187 5.99%, #00C2FF 29.61%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.container__projetos-geral {    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.container__projetos {
+    margin: 1rem 0; 
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 0.5s ease, opacity 0.5s ease;           
+    figure {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.25rem;
+        background: variaveis.$cor-rodape;
+        width: 18rem;
+        height: 11rem;
+        box-shadow: -10px 10px 25px 0px rgba(255, 255, 255, 0.22);        
+        img {            
+            width: 17rem;
+            height: 9.96713rem;            
+        }
+        p {
+            background: variaveis.$cor-rodape;
+            border-radius: 50%;
+            color: variaveis.$cor-texto02;            
+            padding: .5rem;
+            position: absolute;
+            top: -10px;
+            right: -5px;
+        }
+    }
+    &.esquerda {
+        transform: translateX(-50px);
+    }
+    &.aparecer {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.container__projetos-descricao {    
+    p {
+        width: 18rem;
+        margin-bottom: 0.5rem;
+    }
+    a {
+        font-weight: 700;            
+    }
+}

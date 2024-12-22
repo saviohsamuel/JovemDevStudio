@@ -1,0 +1,88 @@
+@use '../root/variaveis';
+
+html {
+    scroll-behavior: smooth;           
+}
+body {
+    font-family: variaveis.$fonte-principal;
+    font-size: 1rem;
+    color: variaveis.$cor-texto01;
+    a {
+        text-decoration: none;
+        color: variaveis.$cor-texto02;        
+    }
+}
+.titulo {
+    display: flex;    
+    padding-block: 1.125rem;
+    p {
+        color: variaveis.$cor-background-icone;
+        font-weight: 800;
+    }
+    h2 {
+        color: variaveis.$cor-texto02;
+    }    
+}
+header, section {
+    padding: 0.6rem 1.125rem;
+}
+#whatsapp .wttp {
+    position: fixed;    
+    background: #25d366;    
+    display: block;
+    text-align: center;    
+    border-radius: 3.12rem;         
+    color: #ffffff;
+    z-index: 9999;      
+    font-size: 1.68rem;
+    bottom: 5.37rem;
+    right: 1.1rem;        
+    width: 3.12rem;
+    height: 3.12rem;
+    line-height: 3.37rem;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);                
+        width: 3.75rem;
+        height: 3.75rem;
+        background-color: #25d366;
+        border-radius: 50%;
+        -webkit-animation: pulse-border 1500ms ease-in-out infinite;
+        animation: pulse-border 1500ms ease-in-out infinite;
+    }             
+}
+@keyframes pulse-border {
+    0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1); opacity: (1);}
+    100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity: (0);}
+}
+.scrollTop {
+    outline: none;
+    border: 0;
+    background-color: variaveis.$cor-btn;
+    width: 1.87rem;
+    height: 1.87rem;    
+    border-radius: 50%;
+    position: fixed;
+    right: 1.7rem;
+    bottom: 2.9rem;
+    z-index: 9999;
+    color: variaveis.$cor-texto01;    
+    cursor: pointer;
+    opacity: 0;   
+    visibility: hidden;
+    transition: all .5s ease;   
+    font-size: 1.25rem;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover {
+        background: variaveis.$cor-btn;
+        color: variaveis.$cor-texto02;
+        transition: all .2s ease;        
+    }
+}

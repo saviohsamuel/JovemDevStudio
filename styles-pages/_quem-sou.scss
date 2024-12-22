@@ -1,0 +1,82 @@
+@use '../root/variaveis';
+
+.quem__sou {
+    background: variaveis.$background-quem-sou;    
+    ul {        
+        margin-bottom: 2rem;
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem; 
+            column-gap: 0.5rem;            
+            padding: 0.3rem 0;
+            img {
+                height: 18px;
+                width: 18px;
+            }            
+        }        
+    }
+}
+.quem__sou-apresentacao {
+    display: flex;
+    padding: 1rem 0.2rem;
+    column-gap: 0.5rem;
+    figure {
+        display: flex;   
+        flex-direction: column;         
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 1.875rem variaveis.$cor-background-icone);
+        height: 3.9rem;
+        width: 3.9rem;        
+        background: variaveis.$cor-background-icone;
+        border-radius: 50%;                
+        img {                    
+            padding: 0.5rem;    
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 800;        
+        strong {
+            background: variaveis.$destaque-quem-sou;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.container__quem-foto {
+    figure {
+        margin-top: 3.125rem;
+        rotate: -3.91deg;
+        border-radius: 0.625rem;
+        width: 17.8125rem;
+        background: var(--Gradient-2, linear-gradient(239deg, #E100FF 3.46%, #7F00FF 92.21%));
+        box-shadow: -62.125px 99.144px 8.5rem 0 rgba(127, 0, 255, 0.22), 
+                    -40.266px 4.01625rem 4.978rem 0 rgba(127, 0, 255, 0.17),
+                    -23.93px 38.189px 43.319px 0 rgba(127, 0, 255, 0.13),
+                    -12.425px 19.829px 1.38125rem 0 rgba(127, 0, 255, 0.11),
+                    -316.375rem 504.875rem 692.5625rem 0 rgba(127, 0, 255, 0.09),
+                    -0.071875rem 114.75rem 334.5rem 0 rgba(127, 0, 255, 0.05);
+        img {
+            rotate: 0;
+            padding: 0.5rem;
+            width: 16.87556rem;
+            height: 10.65344rem;            
+        }
+    }
+    div {
+        margin: 1rem 0 1.5rem 0;
+        p:nth-child(1) {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: variaveis.$cor-btn;
+        }        
+        p:nth-child(2) {
+            font-size: 0.8rem;            
+        }        
+    }
+}

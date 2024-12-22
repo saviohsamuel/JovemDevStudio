@@ -1,0 +1,128 @@
+@use '../root/variaveis';
+
+// Media Tablet
+@media screen and (min-width: 768px) {    
+    body {
+        font-size: 1.2rem;
+        
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 3.5rem;            
+        }
+    }   
+    .container__slogan {
+        div {
+            width: 380px;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }     
+    .subtitulo {
+        font-size: 1.5rem;        
+        hr {
+            width: calc(70% - 1rem);
+        }
+    }   
+    .quem__sou {
+        ul {
+            li {
+                font-size: 1rem;
+                img {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    } 
+    .quem__sou-apresentacao{        
+        p {
+            font-size: 1.6rem;
+        }
+    }    
+    .container__quem-foto {
+        div {
+            p:nth-child(1) {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: variaveis.$cor-btn;
+            }        
+            p:nth-child(2) {
+                font-size: 1rem;            
+            } 
+        }
+    }
+    .servicos > h3 {
+        font-size: 1.6rem;
+    }
+    .tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+    .projetos__apresentacao{        
+        justify-content: flex-end;
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .container__projetos {
+        padding: 0 5rem;
+    }    
+    .container__projetos-descricao {
+        width: 60%;        
+    }        
+    .container__contato {
+        justify-content: space-around;
+        padding: 2rem 0;        
+    }
+    .container__contato-jds {
+        justify-content: center;                
+        width: 48%;
+    }
+}
+
+// Media Desktop
+@media screen and (min-width: 1280px) {    
+    .container__rm {
+        margin-top: 10%;
+    }
+    .subtitulo {
+        hr {
+            width: calc(75% - 1rem);
+        }
+    }
+    .desktop  {
+        margin-left: 5rem;
+        justify-content: flex-start;
+    }
+    .projetos > p {
+        text-align: right;
+        margin-right: 5rem;
+    }
+    .container__projetos {
+        figure {
+            width: 20rem;
+            height: 15rem;
+            img {
+                height: 13rem;
+                width: 18rem;
+            }
+        }
+    }
+    .container__contato {
+        justify-content: center;
+        column-gap: 3rem;
+        padding: 2rem 0;        
+    }
+    .container__contato-jds {
+        justify-content: center;                
+        width: 30%;
+    }
+}

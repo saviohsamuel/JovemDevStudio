@@ -1,0 +1,27 @@
+// Cores
+    $cor-texto01: #C6C6C6;
+    $cor-texto02: #FFFFFF;
+    $cor-btn: #9949FF;
+    $cor-jds: linear-gradient(268deg, #E100FF 27%, #7F00FF 89%, #995AFF 100%);
+    $background-quem-sou: #010108;
+    $destaque-quem-sou: linear-gradient(180deg, #043BFF 0%, #995AFF 100%, #D377FF 100%);
+    $cor-background-icone: #7F43FF;    
+    $cor-rodape: #292929;
+    $cor-rodape-dev: #1A1A1A;
+// Fonte
+    $fonte-principal: 'Inter';
+// Placeholder
+%formulario {    
+    color: $cor-texto02;
+    border-radius: 0.625rem;
+    background: #161E25;     
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: none;        
+    outline: none;
+    min-width: 300px;
+    max-width: 300px;
+    &:focus {            
+        box-shadow: 0 0 5px #3498db; 
+    }    
+}
